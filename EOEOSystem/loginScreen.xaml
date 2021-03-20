@@ -43,7 +43,8 @@
                 Foreground="White"
                 BorderBrush="White"
                 BorderThickness="1.5"
-                FontSize="12">
+                FontSize="12"
+                Click="ExitBtn_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="25" />
@@ -81,7 +82,8 @@
                      FontSize="18"
                      VerticalAlignment="Center"
                      VerticalContentAlignment="Center"
-                     Foreground="White">
+                     Foreground="White"
+                     Name="loginTb">
                 <TextBox.Background>
                     <SolidColorBrush Color="White" 
                                      Opacity="0.2"/>
@@ -106,7 +108,8 @@
                      FontSize="18"
                      VerticalAlignment="Center"
                      VerticalContentAlignment="Center"
-                     Foreground="White">
+                     Foreground="White"
+                     Name="passwordTb">
                 <TextBox.Background>
                     <SolidColorBrush Color="White" 
                                      Opacity="0.2"/>
@@ -114,5 +117,26 @@
             </TextBox>
         </StackPanel>
 
-    </Grid>
+        <WrapPanel Grid.Column="1" 
+                   Grid.Row="5"
+                   HorizontalAlignment="Center">
+            <Button 
+                Grid.Row="5"
+                Width="100"
+                Height="50" 
+                Content="Logowanie"
+                Background="Transparent"
+                Foreground="White"
+                BorderBrush="White"
+                BorderThickness="1.5"
+                FontSize="16"
+                Click="LoginBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </WrapPanel>
+     </Grid>
 </Window>
