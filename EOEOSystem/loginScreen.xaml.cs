@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace EOEOSystem
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
+    /// Logika interakcji dla klasy loginScreen.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class loginScreen : Window
     {
-        public MainWindow()
+        public loginScreen()
         {
             InitializeComponent();
         }
