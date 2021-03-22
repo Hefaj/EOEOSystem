@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using EOEOSystem.Controller;
+using System.Windows;
 
 namespace EOEOSystem
 {
@@ -17,9 +18,18 @@ namespace EOEOSystem
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
             // walidacja danych
-            var a = passwordTb.Text;
-            var b = loginTb.Text;
+            var login = loginTb.Text;
+            var password = passwordTb.Text;
 
+            //UserController.AddUser(
+            //    "rwojcik",
+            //    "1234",
+            //    "Rafał",
+            //    "Wójcik",
+            //    Role.Operator
+            //    );
+
+            var user = UserController.GetUser(login, password);
 
             // jezeli sie powiedzie to otwiera main window
             var mainScreen = new MainScreen();

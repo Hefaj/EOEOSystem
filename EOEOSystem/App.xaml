@@ -4,6 +4,31 @@
              xmlns:local="clr-namespace:EOEOSystem"
              StartupUri="loginScreen.xaml">
     <Application.Resources>
-         
+        <Style x:Key="buttonLoginStyle" TargetType="Button">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style x:Key="defaultWindowStyle" TargetType="Window">
+            <Setter Property="Width" Value="500"/>
+            <Setter Property="Height" Value="500"/>
+            <Setter Property="WindowState" Value="Maximized"/>
+            <Setter Property="WindowStyle" Value="None"/>
+        </Style>
+
+        <Style x:Key="loginWindowStyle" TargetType="Window">
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="Height" Value="400"/>
+            <Setter Property="WindowStyle" Value="None"/>
+            <Setter Property="AllowsTransparency" Value="True"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
     </Application.Resources>
 </Application>
