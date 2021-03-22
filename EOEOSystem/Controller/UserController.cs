@@ -52,16 +52,17 @@ namespace EOEOSystem.Controller
 
         private static string GetHashSHA256(string password)
         {
-            using (SHA256 crypto = SHA256.Create())
+            using (var crypto = SHA256.Create())
             {
                 byte[] bytesPass = Encoding.UTF8.GetBytes(password);
                 byte[] hash = crypto.ComputeHash(bytesPass);
-                string hashString = string.Empty;
+                var hashString = new StringBuilder();
                 foreach (byte x in hash)
                 {
-                    hashString += x.ToString("x2");
+                    hashString.Append(x.ToString("x2"));
+
                 }
-                return hashString;
+                return hashString.ToString();
             }
         }
     }

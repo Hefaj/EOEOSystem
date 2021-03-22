@@ -103,18 +103,18 @@
                            FontSize="14"
                            Margin="10 0 0 0"/>
             </WrapPanel>
-            <TextBox Height="30"
+            <PasswordBox Height="30"
                      BorderBrush="Transparent"
                      FontSize="18"
                      VerticalAlignment="Center"
                      VerticalContentAlignment="Center"
                      Foreground="White"
                      Name="passwordTb">
-                <TextBox.Background>
+                <PasswordBox.Background>
                     <SolidColorBrush Color="White" 
                                      Opacity="0.2"/>
-                </TextBox.Background>
-            </TextBox>
+                </PasswordBox.Background>
+            </PasswordBox>
         </StackPanel>
 
         <WrapPanel Grid.Column="1" 
@@ -124,6 +124,7 @@
                 Style="{StaticResource buttonLoginStyle}"
                 Grid.Row="5"
                 Content="Logowanie"
+                IsDefault="True"
                 Click="LoginBtn_Click">
                 <Button.Resources>
                     <Style TargetType="Border">

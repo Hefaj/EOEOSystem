@@ -19,7 +19,7 @@ namespace EOEOSystem
         {
             // walidacja danych
             var login = loginTb.Text;
-            var password = passwordTb.Text;
+            var password = passwordTb.Password;
 
             //UserController.AddUser(
             //    "rwojcik",
@@ -31,10 +31,19 @@ namespace EOEOSystem
 
             var user = UserController.GetUser(login, password);
 
+            if (user is null)
+            {
+                MessageBox.Show("Nie udało się zalogować!");
+            }
+            else
+            {
+                MessageBox.Show($"Witaj {user.Name}, Twój login to {user.Login}.");
+            }
+
             // jezeli sie powiedzie to otwiera main window
-            var mainScreen = new MainScreen();
-            mainScreen.Show();
-            this.Close();
+            //var mainScreen = new MainScreen();
+            //mainScreen.Show();
+            //this.Close();
         }
     }
 }
