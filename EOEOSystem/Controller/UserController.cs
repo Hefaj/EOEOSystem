@@ -60,7 +60,6 @@ namespace EOEOSystem.Controller
                 foreach (byte x in hash)
                 {
                     hashString.Append(x.ToString("x2"));
-
                 }
                 return hashString.ToString();
             }

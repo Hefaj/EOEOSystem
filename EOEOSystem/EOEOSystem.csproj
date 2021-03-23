@@ -65,6 +65,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CustomControl\IconTitlePasswordBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControl\IconTitleTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControl\LogoBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="loginScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,6 +86,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controller\UserController.cs" />
+    <Compile Include="CustomControl\IconTitlePasswordBox.xaml.cs">
+      <DependentUpon>IconTitlePasswordBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\IconTitleTextBox.xaml.cs">
+      <DependentUpon>IconTitleTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\LogoBox.xaml.cs">
+      <DependentUpon>LogoBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Enums.cs" />
     <Compile Include="loginScreen.xaml.cs">
       <DependentUpon>loginScreen.xaml</DependentUpon>

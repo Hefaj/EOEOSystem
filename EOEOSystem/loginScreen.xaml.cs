@@ -45,5 +45,10 @@ namespace EOEOSystem
             //mainScreen.Show();
             //this.Close();
         }
+
+        private void loginTb_SourceUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
+        {
+
+        }
     }
 }
